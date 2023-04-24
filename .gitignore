@@ -1,0 +1,97 @@
+# Compiled output
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+TrackMate.Web/node_modules
+TrackMate.Web/npm-debug.log
+TrackMate.Web/yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+# .NET
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+*.psess
+*.ncrunchsolution
+*.dotCover
+*.dotSettings.user
+.vs/
+**/.vscode/launch.json
+
+# Angular
+TrackMate.Web/dist
+TrackMate.Web/.angular
+TrackMate.Web/.editorconfig
+TrackMate.Web/.env
+TrackMate.Web/.env.*
+TrackMate.Web/.angular-build-diff.json
+
+# Visual Studio Code
+.vscode/
+
+# Miscellaneous
+*.log
+*.swp
+*.bak
+*.tmp
+*.temp
+*.old
+
+# NuGet packages
+packages/
+
+# Resharper
+_ReSharper*
+*.resharper.user
+
+# NCrunch
+*.ncrunchproject
+*.ncrunchsolution
+
+# StyleCop
+StyleCopReport.xml
+
+# Test Results
+TestResults/
+
+# DotCover
+*.dotCover
+
+#App Setting
+TrackMate/appsettings.*.json
+

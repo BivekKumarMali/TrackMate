@@ -39,3 +39,52 @@ TrackMate is an Issue Tracker and Project Management System built using .NET and
 2. Publish the TrackMate.Api project
 3. Run `ng build --prod` inside the TrackMate.Web folder to create a production build of the Angular app
 4. Deploy the published TrackMate.Api and the Angular `dist/TrackMate.Web` folder to your hosting environment
+
+## Project Structure
+
+ProjectManagement.Api/
+├── Controllers/
+│ ├── CommentController.cs
+│ ├── TaskController.cs
+│ └── ...
+├── Middleware/
+├── Startup.cs
+└── ...
+
+ProjectManagement.Domain/
+├── Models/
+│ ├── Comment.cs
+│ ├── Task.cs
+│ └── ...
+├── Repositories/
+├── Services/
+├── Attachments/
+│ ├── Attachment.cs
+│ ├── CommentAttachment.cs
+│ └── TaskAttachment.cs
+└── ...
+
+ProjectManagement.Infrastructure/
+├── DbContexts/
+├── Repositories/
+│ ├── CommentRepository.cs
+│ ├── TaskRepository.cs
+│ └── ...
+└── ...
+
+ProjectManagement.Application/
+├── Services/
+│ ├── CommentService.cs
+│ ├── TaskService.cs
+│ └── ...
+├── DTOs/
+├── BusinessLogic/
+├── Attachments/
+│ ├── AttachmentDto.cs
+│ ├── CommentAttachmentDto.cs
+│ └── TaskAttachmentDto.cs
+└── ...
+
+ProjectManagement.Tests/
+├── UnitTests/
+└── IntegrationTests/
