@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMate.Domain", "TrackMate.Domain\TrackMate.Domain.csproj", "{EB062A25-B57A-4472-913C-C49823F95A5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMate.Infrastructure", "TrackMate.Infrastructure\TrackMate.Infrastructure.csproj", "{E31B44FC-F637-4C7E-AF07-EFCF6C6A0869}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMate.Application", "TrackMate.Application\TrackMate.Application.csproj", "{7054D5EF-1EEF-49C5-A975-8B91E92CBB4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMate.Test", "TrackMate.Test\TrackMate.Test.csproj", "{BC4D77AF-42FB-42F5-A843-4673855ED0D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackMate", "TrackMate\TrackMate.csproj", "{6AAE1ECA-5386-447B-953E-434A276C73F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBC9D4CE-D6B0-4F6C-8DC5-B2739C097BB8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB062A25-B57A-4472-913C-C49823F95A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB062A25-B57A-4472-913C-C49823F95A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB062A25-B57A-4472-913C-C49823F95A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB062A25-B57A-4472-913C-C49823F95A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31B44FC-F637-4C7E-AF07-EFCF6C6A0869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31B44FC-F637-4C7E-AF07-EFCF6C6A0869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31B44FC-F637-4C7E-AF07-EFCF6C6A0869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31B44FC-F637-4C7E-AF07-EFCF6C6A0869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7054D5EF-1EEF-49C5-A975-8B91E92CBB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7054D5EF-1EEF-49C5-A975-8B91E92CBB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7054D5EF-1EEF-49C5-A975-8B91E92CBB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7054D5EF-1EEF-49C5-A975-8B91E92CBB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4D77AF-42FB-42F5-A843-4673855ED0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4D77AF-42FB-42F5-A843-4673855ED0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4D77AF-42FB-42F5-A843-4673855ED0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4D77AF-42FB-42F5-A843-4673855ED0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AAE1ECA-5386-447B-953E-434A276C73F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AAE1ECA-5386-447B-953E-434A276C73F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAE1ECA-5386-447B-953E-434A276C73F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAE1ECA-5386-447B-953E-434A276C73F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
