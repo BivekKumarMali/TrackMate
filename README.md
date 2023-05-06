@@ -42,49 +42,51 @@ TrackMate is an Issue Tracker and Project Management System built using .NET and
 
 ## Project Structure
 
-ProjectManagement.Api/
-├── Controllers/
-│ ├── CommentController.cs
-│ ├── TaskController.cs
-│ └── ...
-├── Middleware/
-├── Startup.cs
-└── ...
+```bash
+    TrackMate/
+    ├── Controllers/
+    │ ├── CommentController.cs
+    │ ├── TaskController.cs
+    │ └── ...
+    ├── Middleware/
+    ├── Startup.cs
+    └── ...
 
-ProjectManagement.Domain/
-├── Models/
-│ ├── Comment.cs
-│ ├── Task.cs
-│ └── ...
-├── Repositories/
-├── Services/
-├── Attachments/
-│ ├── Attachment.cs
-│ ├── CommentAttachment.cs
-│ └── TaskAttachment.cs
-└── ...
+    TrackMate.Domain/
+    ├── Models/
+    │ ├── Comment.cs
+    │ ├── Task.cs
+    │ └── ...
+    ├── Repositories/
+    ├── Services/
+    ├── Attachments/
+    │ ├── Attachment.cs
+    │ ├── CommentAttachment.cs
+    │ └── TaskAttachment.cs
+    └── ...
 
-ProjectManagement.Infrastructure/
-├── DbContexts/
-├── Repositories/
-│ ├── CommentRepository.cs
-│ ├── TaskRepository.cs
-│ └── ...
-└── ...
+    TrackMate.Infrastructure/
+    ├── DbContexts/
+    ├── Repositories/
+    │ ├── CommentRepository.cs
+    │ ├── TaskRepository.cs
+    │ └── ...
+    └── ...
 
-ProjectManagement.Application/
-├── Services/
-│ ├── CommentService.cs
-│ ├── TaskService.cs
-│ └── ...
-├── DTOs/
-├── BusinessLogic/
-├── Attachments/
-│ ├── AttachmentDto.cs
-│ ├── CommentAttachmentDto.cs
-│ └── TaskAttachmentDto.cs
-└── ...
+    TrackMate.Application/
+    ├── Services/
+    │ ├── CommentService.cs
+    │ ├── TaskService.cs
+    │ └── ...
+    ├── DTOs/
+    ├── BusinessLogic/
+    ├── Attachments/
+    │ ├── AttachmentDto.cs
+    │ ├── CommentAttachmentDto.cs
+    │ └── TaskAttachmentDto.cs
+    └── ...
 
-ProjectManagement.Tests/
-├── UnitTests/
-└── IntegrationTests/
+    TrackMate.Test/
+    ├── UnitTests/
+    └── IntegrationTests/
+```
