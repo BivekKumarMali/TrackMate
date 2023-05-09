@@ -6,13 +6,14 @@ namespace TrackMate.Domain.Entities
 {
     public class Comment: BaseModel
     {
-        public int TaskId { get; set; }
+        public int? TaskId { get; set; }
+        public int? SubTaskId { get; set; }
         public int CommentUserId { get; set; }
-        public int CommentableId { get; set; }
-        public CommentableType CommentableType { get; set; }
 
         [ForeignKey("TaskId")]
         public virtual Task Task { get; set; }
+        [ForeignKey("SubTaskId")]
+        public virtual SubTask SubTask { get; set; }
         [ForeignKey("CommentUserId")]
         public virtual User CommentUserDetails { get; set; }
 
