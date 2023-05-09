@@ -25,42 +25,38 @@ public class TrackMateDbContext: DbContext
     {
         // Configure Task - Comment relationship
         modelBuilder.Entity<Comment>()
-            .HasOne<Task>()
+            .HasOne(c => c.Task)
             .WithMany(t => t.Comments)
-            .HasForeignKey(c => new { c.CommentableId, c.CommentableType })
-            .HasPrincipalKey(t => new { CommentableId = t.Id, CommentableType = CommentableType.Task })
+            .HasForeignKey(c => c.TaskId)
             .OnDelete(DeleteBehavior.Cascade);
 
         // Configure Subtask - Comment relationship
         modelBuilder.Entity<Comment>()
-            .HasOne<SubTask>()
+            .HasOne(c => c.SubTask)
             .WithMany(s => s.Comments)
-            .HasForeignKey(c => new { c.CommentableId, c.CommentableType })
-            .HasPrincipalKey(s => new { CommentableId = s.Id, CommentableType = CommentableType.SubTask })
+            .HasForeignKey(c => c.SubTaskId)
             .OnDelete(DeleteBehavior.Cascade);
 
         // Configure Task - Attachment relationship
         modelBuilder.Entity<Attachment>()
-            .HasOne<Task>()
+            .HasOne(a => a.Task)
             .WithMany(t => t.Attachments)
-            .HasForeignKey(a => new { a.AttachableId, a.AttachableType })
-            .HasPrincipalKey(t => new { AttachableId = t.Id, AttachableType = AttachableType.Task })
+            .HasForeignKey(a => a.TaskId)
             .OnDelete(DeleteBehavior.Cascade);
 
         // Configure Subtask - Attachment relationship
         modelBuilder.Entity<Attachment>()
-            .HasOne<SubTask>()
+            .HasOne(a => a.SubTask)
             .WithMany(s => s.Attachments)
-            .HasForeignKey(a => new { a.AttachableId, a.AttachableType })
-            .HasPrincipalKey(s => new { AttachableId = s.Id, AttachableType = AttachableType.SubTask })
+            .HasForeignKey(a => a.SubTaskId)
             .OnDelete(DeleteBehavior.Cascade);
 
         // Configure Comment - Attachment relationship
         modelBuilder.Entity<Attachment>()
-            .HasOne<Comment>()
+            .HasOne(a => a.Comment)
             .WithMany(c => c.Attachments)
-            .HasForeignKey(a => new { a.AttachableId, a.AttachableType })
-            .HasPrincipalKey(c => new { AttachableId = c.Id, AttachableType = AttachableType.Comment })
+            .HasForeignKey(a => a.CommentId)
             .OnDelete(DeleteBehavior.Cascade);
+
     }
 }
