@@ -90,3 +90,7 @@ TrackMate is an Issue Tracker and Project Management System built using .NET and
     ├── UnitTests/
     └── IntegrationTests/
 ```
+
+## Learning Acquired
+
+1. Enity Framework does not support Polymorphic relation
