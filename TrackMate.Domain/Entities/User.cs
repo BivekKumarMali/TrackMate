@@ -1,14 +1,13 @@
-﻿using TrackMate.Domain.Common;
-using TrackMate.Domain.Enums;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace TrackMate.Domain.Entities
 {
-    public class User: BaseModel
+    public class User : IdentityUser
     {
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public Role Role { get; set; }
+        public bool IsDeleted { get; set; }
+
+        public ICollection<Task> Tasks { get; set; }
     }
 }

@@ -1,19 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using TrackMate.Domain.Common;
-using TrackMate.Domain.Enums;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TrackMate.Domain.Entities
 {
-    public class ProjectMember: BaseModel
+    public class ProjectMember : IdentityUserRole<string>
     {
         public int ProjectId { get; set; }
-        public int MemberId { get; set; }
-        public Role Role { get; set; }
-
         [ForeignKey("ProjectId")]
-        public virtual Project Project { get; set; }
-        [ForeignKey("MemberId")]
-        public virtual User Member { get; set; }
-
+        public Project Project { get; set; }
     }
 }
