@@ -27,7 +27,7 @@ TrackMate is an Issue Tracker and Project Management System built using .NET and
 
 1. Clone the repository
 2. Restore NuGet packages for the .NET projects
-3. Update the connection string in the `appsettings.json` file of the TrackMate.Api project
+3. Update the connection string in the `appsettings.json` file of the TrackMate project
 4. Run `dotnet ef database update` to create the database and apply migrations (if using Entity Framework Core)
 5. Run `npm install` inside the TrackMate.Web folder to install Angular dependencies
 6. Build and run the TrackMate.Api project
