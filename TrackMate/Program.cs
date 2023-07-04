@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using TrackMate.Domain.Entities;
 using TrackMate.Infrastructure;
 using TrackMate.Infrastructure.Data;
 
@@ -12,6 +14,11 @@ builder.Configuration.AddJsonFile("appsettings.json", optional: false);
 // Database management
 builder.Services.AddDbContext<TrackMateDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Identity and Entity Framework
+builder.Services.AddIdentity<User, IdentityRole>()
+        .AddEntityFrameworkStores<TrackMateDbContext>()
+        .AddDefaultTokenProviders();
 
 // Dependency injection
 builder.Services.AddControllers();
