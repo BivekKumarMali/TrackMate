@@ -10,7 +10,7 @@ namespace TrackMate.Domain.Common
         public int Id { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
         public string UserId { get; set; }
 
         [ForeignKey("UserId")]
